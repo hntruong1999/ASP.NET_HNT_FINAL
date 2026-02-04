@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div class="auth-card">
+    <h2>Quên mật khẩu</h2>
+
+    <form asp-action="QuenMatKhau" method="post">
+        <div class="form-group">
+            <label>Nhập Email</label>
+            <input name="email" class="form-control" required />
+        </div>
+
+        <button type="submit" class="btn-submit">
+            Gửi mật khẩu mới
+        </button>
+
+        <div class="auth-link mt-2">
+            <a asp-action="Login">Quay lại đăng nhập</a>
+        </div>
+
+        @if (ViewBag.Msg != null)
+        {
+            <div class="alert alert-info mt-2">
+                @ViewBag.Msg
+            </div>
+        }
+    </form>
+</div>
