@@ -54,10 +54,7 @@ Trước khi chạy project, đảm bảo máy đã cài:
 5. Đổi `Data Source` cho phù hợp với SQL Server trên máy
 
 Ví dụ:
-```json
-"ConnectionStrings": {
-  "DefaultConnection": "Server=.;Database=Shop_Apple_HNT;Trusted_Connection=True;TrustServerCertificate=True"
-}
+json "ConnectionStrings": {"DefaultConnection": "Server=.;Database=Shop_Apple_HNT;Trusted_Connection=True;TrustServerCertificate=True"}
 Bước 3: Thực hiện Migration
 
 Chuột phải vào project Shop_Apple_HNT
